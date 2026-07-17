@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fakhrul | Web Developer & Software Engineer</title>
+    <meta name="description"
+        content="Portofolio profesional menampilkan karya, keahlian, dan proyek pengembangan web saya yang modern dan responsif.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header id="header">
+        <nav>
+            <a href="#" class="logo">Portofolio M. Fakhrul Rodzi</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="active">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Tema">
+                    <!-- Sun/Moon SVG icons handled by JS -->
+                    <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.38 5.38 0 0 1-4.4 2.26 5.4 5.4 0 0 1-5.4-5.4 5.38 5.38 0 0 1 2.26-4.4C12.92 3.04 12.46 3 12 3z" />
+                    </svg>
+                </button>
+                <button class="menu-btn" id="menu-btn" aria-label="Menu Utama">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h4>Selamat Datang di Portofolio Saya</h4>
+                <h1>Halo, Saya <span>Muhammad Fakhrul Rodzi</span></h1>
+                <h2>Fokus pada <span id="typing-text"></span><span class="typing-cursor"></span></h2>
+                <p>Saya merancang dan mengembangkan antarmuka web yang berkinerja tinggi, responsif, serta memiliki
+                    estetika visual premium untuk mewujudkan ide digital Anda.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+
+                    <!-- Foto Profil Anda -->
+                    <img class="hero-img" src="profil.jpeg" alt="Foto Muhammad Fakhrul Rodzi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <div class="section-title">
+            <h2>Tentang <span>Saya</span></h2>
+            <p>Lebih dekat dengan latar belakang profesional dan keahlian teknis saya.</p>
+        </div>
+        <div class="about-content">
+            <div class="about-details glass-card">
+                <p>Saya seorang Front End dan Web Developer yang antusias dalam merancang dan mengembangkan aplikasi web
+                    interaktif. Saya memiliki minat besar dalam menciptakan antarmuka pengguna (UI) yang
+                    menarik,responsif, berkinerja tinggi, serta mengoptimalkan pengalaman pengguna (UX) yang mulus.</p>
+                <p>Dengan latar belakang kuat di teknologi modern, saya terus mengeksplorasi tren teknologi terbaru
+                    untuk memberikan hasil kerja terbaik yang memenuhi standar industri.</p>
+                <div class="about-stats">
+                    <div class="stat-box glass-card">
+                        <h3>3+</h3>
+                        <p>Proyek Selesai</p>
+                    </div>
+                    <div class="stat-box glass-card">
+                        <h3>3+</h3>
+                        <p>Klien Puas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-wrapper glass-card">
+                <h3>Keahlian Teknis</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML / CSS / JavaScript</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PHP / Laravel / MySQL</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Responsive UI / CSS Frameworks</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <div class="section-title">
+            <h2>Proyek <span>Pilihan</span></h2>
+            <p>Berikut adalah beberapa proyek terbaik yang telah saya selesaikan baru-baru ini.</p>
+        </div>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="web">Web App</button>
+            <button class="filter-btn" data-filter="design">UI/UX</button>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card glass-card" data-category="web">
+                <div class="project-img-container">
+                    <img src="dashboard_admin.png" alt="Sistem Absensi Karyawan"
+                        style="width:100%; height:100%; object-fit:cover;">
+                    <div class="project-overlay">
+                        <div class="project-overlay-btns">
+                            <button class="btn btn-primary view-details-btn" data-project="1">Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Web App</span>
+                    <h3>Sistem Absensi Karyawan</h3>
+                    <p>Aplikasi absensi karyawan berbasis web terintegrasi dengan Penggajian.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">ChartJS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card glass-card" data-category="design">
+                <div class="project-img-container">
+                    <img src="ui_ux.png" alt="Sistem Absensi Karyawan Web Design"
+                        style="width:100%; height:100%; object-fit:cover;">
+                    <div class="project-overlay">
+                        <div class="project-overlay-btns">
+                            <button class="btn btn-primary view-details-btn" data-project="2">Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">UI/UX</span>
+                    <h3>Sistem Absensi Karyawan Web Design</h3>
+                    <p>Perancangan antarmuka website (UI/UX) untuk sistem absensi karyawan modern dengan visualisasi
+                        dashboard yang interaktif, clean, dan mudah dipahami.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">UI/UX</span>
+                        <span class="tech-tag">Web Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="section-title">
+            <h2>Hubungi <span>Saya</span></h2>
+            <p>Punya proyek impian atau sekadar ingin bertanya? Silakan kirim pesan ke saya.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info-wrapper glass-card">
+                <h3>Informasi Kontak</h3>
+                <p>Silakan hubungi saya melalui saluran di bawah ini. Saya akan berusaha membalas secepat mungkin.</p>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p>fahrulajah12345@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Telepon / WA</h4>
+                        <p>+62 822-1539-7137</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/fxrlrdzi_?igsh=MXVhZWQ4eXRyYnZidQ==" class="social-icon"
+                        aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form-wrapper glass-card"
+                style="display: flex; flex-direction: column; justify-content: center; gap: 24px;">
+                <h3>Mari Berkolaborasi!</h3>
+                <p>Saya sangat terbuka untuk mendiskusikan peluang kerja, proyek baru, atau kolaborasi kreatif lainnya.
+                    Klik tombol di bawah ini untuk langsung menghubungi saya via WhatsApp.</p>
+                <form id="contact-form">
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; padding: 16px 28px; justify-content: center; gap: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="margin-right: 8px;">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        Hubungi via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Portofolio. Hak Cipta Dilindungi.</p>
+            <p>Didesain oleh Fakhrul</p>
+        </div>
+    </footer>
+
+    <!-- Detail Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modal-close" aria-label="Tutup">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-img-container" id="modal-media-container"></div>
+            <div class="modal-info">
+                <h3 id="modal-title">Judul Proyek</h3>
+                <div class="modal-tags" id="modal-tags"></div>
+                <p id="modal-desc">Deskripsi lengkap proyek akan dimuat di sini secara dinamis menggunakan JavaScript.
+                </p>
+                <div class="modal-btns">
+                    <a href="#" class="btn btn-primary" id="modal-live-btn" target="_blank"
+                        rel="noopener noreferrer">Lihat Live</a>
+                    <button class="btn btn-secondary" id="modal-back-btn">Kembali</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
